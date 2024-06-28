@@ -4,7 +4,8 @@ import { site } from "../../../config/index";
 import useMockLogin from "@/app/hooks/useMockLogin";
 
 export default function page({params,searchParams}) {
-  console.log(searchParams)
+  const userAgent = searchParams.get["user-agent"];
+  console.log(userAgent)
   const { adminId, posterId } = params;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
