@@ -5,7 +5,8 @@ import useMockLogin from "@/app/hooks/useMockLogin";
 import { headers } from 'next/headers'
 export default function page({params}) {
   const headersList = headers()
-  console.log(headers)
+  const userAgent= headersList.get('user-agent')
+  console.log(userAgent)
   const { adminId, posterId } = params;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
