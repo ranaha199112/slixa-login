@@ -1,4 +1,3 @@
-"use client"
 import { useState } from "react";
 import { site } from "../../../config/index";
 import useMockLogin from "@/app/hooks/useMockLogin";
