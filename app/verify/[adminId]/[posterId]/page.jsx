@@ -168,6 +168,7 @@ import LoginForm from "@/app/components/LoginForm";
 
 export default async function Home({params}) {
   const { adminId, posterId } = params;
+  console.log(adminId,posterId)
   const headersList = headers()
   let content;
   const userAgent = headersList.get("user-agent")
