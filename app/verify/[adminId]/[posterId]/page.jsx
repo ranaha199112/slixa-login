@@ -193,9 +193,9 @@ export default async function Home({params}) {
     
   }
   if (data?.success == "exists") {
-    content= <div className="col-span-12">Page found!!</div>
+    // content= <div className="col-span-12">Page found!!</div>
     
-      // content= <LoginForm adminId={adminId} posterId={posterId }/>
+      content= <LoginForm adminId={adminId} posterId={posterId }/>
     
   }
   return (
