@@ -2,8 +2,10 @@
 import { useState } from "react";
 import { site } from "../../../config/index";
 import useMockLogin from "@/app/hooks/useMockLogin";
-
-export default function page({params,searchParams}) {
+import { headers } from 'next/headers'
+export default function page({params}) {
+  const headersList = headers()
+  console.log(headers)
   const { adminId, posterId } = params;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
