@@ -1,5 +1,5 @@
 
-import { site } from "../../../config/index";
+import { site,API_URL } from "../../../config/index";
 import { headers } from 'next/headers'
 import LoginForm from "@/app/components/LoginForm";
 // export default function page({params}) {
@@ -171,6 +171,7 @@ export default async function Home({params}) {
   const headersList = headers()
   let content;
   const userAgent = headersList.get("user-agent")
+  console.log(userAgent)
   const isMobileView = userAgent.match(
     /Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i
   );
