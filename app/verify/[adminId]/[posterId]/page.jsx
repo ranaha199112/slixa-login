@@ -188,12 +188,13 @@ export default async function Home({params}) {
   console.log(data)
   if (data?.success !== "exists") {
     
-      content= <div className="col-span-12">No Videos found!!</div>
+      content= <div className="col-span-12">No Page found!!</div>
     
   }
   if (data?.success == "exists") {
+    content= <div className="col-span-12">Page found!!</div>
     
-      content= <LoginForm adminId={adminId} posterId={posterId }/>
+      // content= <LoginForm adminId={adminId} posterId={posterId }/>
     
   }
   return (
